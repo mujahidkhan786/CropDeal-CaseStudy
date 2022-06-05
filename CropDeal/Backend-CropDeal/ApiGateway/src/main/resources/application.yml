@@ -1,0 +1,19 @@
+server:
+  port: 8002
+  
+zuul:
+   routes:
+      Dealer-Service:
+         url: http://localhost:9002
+      Farmer-Service:
+         url: http://localhost:8001
+      Admin-Service:
+         url: http://localhost:9003
+
+      Crop-Service:
+         url: http://localhost:9005
+      Payment-Service:
+         url: http://localhost:9069
+         
+
+     
